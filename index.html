@@ -17,7 +17,7 @@
       <section class="search">
         <input type="text" placeholder="Search" />
         <div class="search-icon">
-            <img src="img/search-icon.svg" alt="Search" />
+          <img src="img/search-icon.svg" alt="Search" />
         </div>
       </section>
       <section class="right-nav">
@@ -30,57 +30,86 @@
 
     <aside class="tablet-hide">
       <section class="menu">
-        <div>
-          <img src="img/menu/home.svg" alt="Home" />
+        <div class="menu-items">
+          <div>
+            <img src="img/menu/home.svg" alt="Home" />
+          </div>
           <p>Home</p>
         </div>
-        <div>
-          <img src="img/menu/editor-picks.svg" alt="Editor Picks" />
+        <div class="menu-items">
+          <div>
+            <img src="img/menu/editor-picks.svg" alt="Editor Picks" />
+          </div>
           <p>Editor Picks</p>
         </div>
-        <div>
-          <img src="img/menu/trending.svg" alt="Trending" />
+        <div class="menu-items">
+          <div>
+            <img src="img/menu/trending.svg" alt="Trending" />
+          </div>
           <p>Trending</p>
         </div>
-        <div>
-          <img src="img/menu/browse.svg" alt="Browse" />
+        <div class="menu-items">
+          <div>
+            <img src="img/menu/browse.svg" alt="Browse" />
+          </div>
           <p>Browse</p>
         </div>
-        <div>
-          <img src="img/menu/latest.svg" alt="Latest" />
+        <div class="menu-items">
+          <div>
+            <img src="img/menu/latest.svg" alt="Latest" />
+          </div>
           <p>Latest</p>
         </div>
       </section>
       <section class="featured">
-        <figure>
-          <div>
+        <strong>Featured</strong>
+        <figure class="featured-container">
+          <div class="profile-featured-container">
             <img
               src="https://source.unsplash.com/random/30x30/?profile-picture1"
-            />
+            class="live"/>
+          </div>
+          <div class="profile-featured-container">
             <img
               src="https://source.unsplash.com/random/30x30/?profile-picture2"
-            />
+            class="live"/>
+          </div>
+          <div class="profile-featured-container">
             <img
               src="https://source.unsplash.com/random/30x30/?profile-picture3"
-            />
+            class="live"/>
+          </div>
+          <div class="profile-featured-container">
             <img
               src="https://source.unsplash.com/random/30x30/?profile-picture4"
-            />
+            class="live"/>
+          </div>
+          <div class="profile-featured-container">
             <img
               src="https://source.unsplash.com/random/30x30/?profile-picture5"
             />
+          </div>
+          <div class="profile-featured-container">
             <img
               src="https://source.unsplash.com/random/30x30/?profile-picture6"
             />
+          </div>
+          <div class="profile-featured-container">
             <img
               src="https://source.unsplash.com/random/30x30/?profile-picture7"
             />
+          </div>
+          <div class="profile-featured-container">
             <img
               src="https://source.unsplash.com/random/30x30/?profile-picture8"
             />
+          </div>
+          <div class="profile-featured-container">
             <img
               src="https://source.unsplash.com/random/30x30/?profile-picture9"
             />
+          </div>
+          <div class="profile-featured-container">
             <img
               src="https://source.unsplash.com/random/30x30/?profile-picture10"
             />
@@ -88,17 +117,20 @@
         </figure>
       </section>
       <section class="theme">
-        <div>Theme</div>
-        <div>
-          <img src="img/theme/system-default.svg" alt="System Default" />
+        <strong>Theme</strong>
+        <div class="theme-items">
+            <div>
+          <img src="img/theme/system-default.svg" alt="System Default" /></div>
           <p>System Default</p>
         </div>
-        <div>
-          <img src="img/theme/dark-mode.svg" alt="Dark Mode" />
+        <div class="theme-items">
+            <div>
+          <img src="img/theme/dark-mode.svg" alt="Dark Mode" /></div>
           <p>Dark Mode</p>
         </div>
-        <div>
-          <img src="img/theme/light-mode.svg" alt="Light Mode" />
+        <div class="theme-items">
+            <div>
+          <img src="img/theme/light-mode.svg" alt="Light Mode" /></div>
           <p>Light Mode</p>
         </div>
       </section>
@@ -167,8 +199,8 @@
 
       <section class="vertical-video">
         <div class="cat-titles">
-            <p>Top Live Categories</p>
-            <button class="view-all">View all</button>
+          <p>Top Live Categories</p>
+          <button class="view-all">View all</button>
         </div>
         <figure class="video-container">
           <div>
@@ -291,50 +323,33 @@
       <!-- Video Rows -->
 
       <section>
-        
         <!-- Picks Videos -->
 
-      <section class="video-row">
-        <div class="cat-titles">
+        <section class="video-row">
+          <div class="cat-titles">
             <p>Picks</p>
             <button class="view-all">View all</button>
-        </div>
-        <figure class="horizontal-video">
-          <div class="thumbnail-title">
-            <div>
-              <img
-                src="https://source.unsplash.com/random/800x450/?thumbnail-"
-                alt=""/>
-            </div>
-            <p>VideoTitle</p>
           </div>
-          <div class="author">
-            <div>
-                <img src="https://source.unsplash.com/random/30x30/?profile-picture12" alt="">
+          <figure class="horizontal-video">
+            <div class="thumbnail-title">
+              <div>
+                <img
+                  src="https://source.unsplash.com/random/800x450/?thumbnail-"
+                  alt=""
+                />
+              </div>
+              <p>VideoTitle</p>
             </div>
-            <div>
+            <div class="author">
+              <div>
+                <img
+                  src="https://source.unsplash.com/random/30x30/?profile-picture12"
+                  alt=""
+                />
+              </div>
+              <div>
                 <p>NomeCanale</p>
                 <p>8 hours ago • 44K views</p>
-            </div>
-          </div>
-        </figure>
-
-        <figure class="horizontal-video">
-            <div class="thumbnail-title">
-              <div>
-                <img
-                  src="https://source.unsplash.com/random/800x450/?thumbnail-"
-                  alt=""/>
-              </div>
-              <p>VideoTitle</p>
-            </div>
-            <div class="author">
-              <div>
-                  <img src="https://source.unsplash.com/random/30x30/?profile-picture12" alt="">
-              </div>
-              <div>
-                  <p>NomeCanale</p>
-                  <p>8 hours ago • 44K views</p>
               </div>
             </div>
           </figure>
@@ -344,17 +359,21 @@
               <div>
                 <img
                   src="https://source.unsplash.com/random/800x450/?thumbnail-"
-                  alt=""/>
+                  alt=""
+                />
               </div>
               <p>VideoTitle</p>
             </div>
             <div class="author">
               <div>
-                  <img src="https://source.unsplash.com/random/30x30/?profile-picture12" alt="">
+                <img
+                  src="https://source.unsplash.com/random/30x30/?profile-picture12"
+                  alt=""
+                />
               </div>
               <div>
-                  <p>NomeCanale</p>
-                  <p>8 hours ago • 44K views</p>
+                <p>NomeCanale</p>
+                <p>8 hours ago • 44K views</p>
               </div>
             </div>
           </figure>
@@ -364,17 +383,45 @@
               <div>
                 <img
                   src="https://source.unsplash.com/random/800x450/?thumbnail-"
-                  alt=""/>
+                  alt=""
+                />
               </div>
               <p>VideoTitle</p>
             </div>
             <div class="author">
               <div>
-                  <img src="https://source.unsplash.com/random/30x30/?profile-picture12" alt="">
+                <img
+                  src="https://source.unsplash.com/random/30x30/?profile-picture12"
+                  alt=""
+                />
               </div>
               <div>
-                  <p>NomeCanale</p>
-                  <p>8 hours ago • 44K views</p>
+                <p>NomeCanale</p>
+                <p>8 hours ago • 44K views</p>
+              </div>
+            </div>
+          </figure>
+
+          <figure class="horizontal-video">
+            <div class="thumbnail-title">
+              <div>
+                <img
+                  src="https://source.unsplash.com/random/800x450/?thumbnail-"
+                  alt=""
+                />
+              </div>
+              <p>VideoTitle</p>
+            </div>
+            <div class="author">
+              <div>
+                <img
+                  src="https://source.unsplash.com/random/30x30/?profile-picture12"
+                  alt=""
+                />
+              </div>
+              <div>
+                <p>NomeCanale</p>
+                <p>8 hours ago • 44K views</p>
               </div>
             </div>
           </figure>
@@ -383,26 +430,30 @@
         <!-- Gaming Videos -->
 
         <section class="video-row">
-            <div class="cat-titles">
-                <p>Gaming</p>
-                <button class="view-all">View all</button>
-            </div>
+          <div class="cat-titles">
+            <p>Gaming</p>
+            <button class="view-all">View all</button>
+          </div>
           <figure class="horizontal-video">
             <div class="thumbnail-title">
               <div>
                 <img
                   src="https://source.unsplash.com/random/800x450/?thumbnail-"
-                  alt=""/>
+                  alt=""
+                />
               </div>
               <p>VideoTitle</p>
             </div>
             <div class="author">
               <div>
-                  <img src="https://source.unsplash.com/random/30x30/?profile-picture12" alt="">
+                <img
+                  src="https://source.unsplash.com/random/30x30/?profile-picture12"
+                  alt=""
+                />
               </div>
               <div>
-                  <p>NomeCanale</p>
-                  <p>8 hours ago • 44K views</p>
+                <p>NomeCanale</p>
+                <p>8 hours ago • 44K views</p>
               </div>
             </div>
           </figure>
@@ -412,17 +463,21 @@
               <div>
                 <img
                   src="https://source.unsplash.com/random/800x450/?thumbnail-"
-                  alt=""/>
+                  alt=""
+                />
               </div>
               <p>VideoTitle</p>
             </div>
             <div class="author">
               <div>
-                  <img src="https://source.unsplash.com/random/30x30/?profile-picture12" alt="">
+                <img
+                  src="https://source.unsplash.com/random/30x30/?profile-picture12"
+                  alt=""
+                />
               </div>
               <div>
-                  <p>NomeCanale</p>
-                  <p>8 hours ago • 44K views</p>
+                <p>NomeCanale</p>
+                <p>8 hours ago • 44K views</p>
               </div>
             </div>
           </figure>
@@ -432,17 +487,21 @@
               <div>
                 <img
                   src="https://source.unsplash.com/random/800x450/?thumbnail-"
-                  alt=""/>
+                  alt=""
+                />
               </div>
               <p>VideoTitle</p>
             </div>
             <div class="author">
               <div>
-                  <img src="https://source.unsplash.com/random/30x30/?profile-picture12" alt="">
+                <img
+                  src="https://source.unsplash.com/random/30x30/?profile-picture12"
+                  alt=""
+                />
               </div>
               <div>
-                  <p>NomeCanale</p>
-                  <p>8 hours ago • 44K views</p>
+                <p>NomeCanale</p>
+                <p>8 hours ago • 44K views</p>
               </div>
             </div>
           </figure>
@@ -452,130 +511,147 @@
               <div>
                 <img
                   src="https://source.unsplash.com/random/800x450/?thumbnail-"
-                  alt=""/>
+                  alt=""
+                />
               </div>
               <p>VideoTitle</p>
             </div>
             <div class="author">
               <div>
-                  <img src="https://source.unsplash.com/random/30x30/?profile-picture12" alt="">
+                <img
+                  src="https://source.unsplash.com/random/30x30/?profile-picture12"
+                  alt=""
+                />
               </div>
               <div>
-                  <p>NomeCanale</p>
-                  <p>8 hours ago • 44K views</p>
+                <p>NomeCanale</p>
+                <p>8 hours ago • 44K views</p>
               </div>
             </div>
           </figure>
         </section>
 
-          <figure class="horizontal-video">
-            <div class="thumbnail-title">
-              <div>
-                <img
-                  src="https://source.unsplash.com/random/800x450/?thumbnail-"
-                  alt=""/>
-              </div>
-              <p>VideoTitle</p>
+        <figure class="horizontal-video">
+          <div class="thumbnail-title">
+            <div>
+              <img
+                src="https://source.unsplash.com/random/800x450/?thumbnail-"
+                alt=""
+              />
             </div>
-            <div class="author">
-              <div>
-                  <img src="https://source.unsplash.com/random/30x30/?profile-picture12" alt="">
-              </div>
-              <div>
-                  <p>NomeCanale</p>
-                  <p>8 hours ago • 44K views</p>
-              </div>
+            <p>VideoTitle</p>
+          </div>
+          <div class="author">
+            <div>
+              <img
+                src="https://source.unsplash.com/random/30x30/?profile-picture12"
+                alt=""
+              />
             </div>
-          </figure>
+            <div>
+              <p>NomeCanale</p>
+              <p>8 hours ago • 44K views</p>
+            </div>
+          </div>
+        </figure>
 
-          <figure class="horizontal-video">
-            <div class="thumbnail-title">
-              <div>
-                <img
-                  src="https://source.unsplash.com/random/800x450/?thumbnail-"
-                  alt=""/>
-              </div>
-              <p>VideoTitle</p>
+        <figure class="horizontal-video">
+          <div class="thumbnail-title">
+            <div>
+              <img
+                src="https://source.unsplash.com/random/800x450/?thumbnail-"
+                alt=""
+              />
             </div>
-            <div class="author">
-              <div>
-                  <img src="https://source.unsplash.com/random/30x30/?profile-picture12" alt="">
-              </div>
-              <div>
-                  <p>NomeCanale</p>
-                  <p>8 hours ago • 44K views</p>
-              </div>
+            <p>VideoTitle</p>
+          </div>
+          <div class="author">
+            <div>
+              <img
+                src="https://source.unsplash.com/random/30x30/?profile-picture12"
+                alt=""
+              />
             </div>
-          </figure>
+            <div>
+              <p>NomeCanale</p>
+              <p>8 hours ago • 44K views</p>
+            </div>
+          </div>
+        </figure>
 
-          <figure class="horizontal-video">
-            <div class="thumbnail-title">
-              <div>
-                <img
-                  src="https://source.unsplash.com/random/800x450/?thumbnail-"
-                  alt=""/>
-              </div>
-              <p>VideoTitle</p>
+        <figure class="horizontal-video">
+          <div class="thumbnail-title">
+            <div>
+              <img
+                src="https://source.unsplash.com/random/800x450/?thumbnail-"
+                alt=""
+              />
             </div>
-            <div class="author">
-              <div>
-                  <img src="https://source.unsplash.com/random/30x30/?profile-picture12" alt="">
-              </div>
-              <div>
-                  <p>NomeCanale</p>
-                  <p>8 hours ago • 44K views</p>
-              </div>
+            <p>VideoTitle</p>
+          </div>
+          <div class="author">
+            <div>
+              <img
+                src="https://source.unsplash.com/random/30x30/?profile-picture12"
+                alt=""
+              />
             </div>
-          </figure>
+            <div>
+              <p>NomeCanale</p>
+              <p>8 hours ago • 44K views</p>
+            </div>
+          </div>
+        </figure>
 
-          <figure class="horizontal-video">
-            <div class="thumbnail-title">
-              <div>
-                <img
-                  src="https://source.unsplash.com/random/800x450/?thumbnail-"
-                  alt=""/>
-              </div>
-              <p>VideoTitle</p>
+        <figure class="horizontal-video">
+          <div class="thumbnail-title">
+            <div>
+              <img
+                src="https://source.unsplash.com/random/800x450/?thumbnail-"
+                alt=""
+              />
             </div>
-            <div class="author">
-              <div>
-                  <img src="https://source.unsplash.com/random/30x30/?profile-picture12" alt="">
-              </div>
-              <div>
-                  <p>NomeCanale</p>
-                  <p>8 hours ago • 44K views</p>
-              </div>
+            <p>VideoTitle</p>
+          </div>
+          <div class="author">
+            <div>
+              <img
+                src="https://source.unsplash.com/random/30x30/?profile-picture12"
+                alt=""
+              />
             </div>
-          </figure>
+            <div>
+              <p>NomeCanale</p>
+              <p>8 hours ago • 44K views</p>
+            </div>
+          </div>
+        </figure>
+      </section>
 
+      <!-- Footer -->
 
-</section>
-
-
-          <!-- Footer -->
-
-          <section>
-            <div class="mobile-show">
-                <img src="img/logo.svg" alt="">
-            </div>
-            <div class="links">
-                <a href="">About Us</a>
-                <a href="">Careers</a>
-                <a href="">Our Apps</a>
-                <a href="">Developers</a>
-                <a href="">Advertising</a>
-                <a href="">Store</a>
-                <a href="">Cloud</a>
-            </div>
-            <div class="terms-privacy">
-                <a href="">Terms & Conditions</a>
-                <a href="">Privacy Policy</a>
-                <a href="">Copyright / DMCA</a>
-            </div>
-            <div class="copyright">
-                <p>Copyright &copy; 2023 Rumble. All Rights Reserved.</p>
-            </div>
-          </section>
+      <section>
+        <div class="mobile-show">
+          <img src="img/logo.svg" alt="" />
+        </div>
+        <div class="links">
+          <a href="">About Us</a>
+          <a href="">Careers</a>
+          <a href="">Our Apps</a>
+          <a href="">Developers</a>
+          <a href="">Advertising</a>
+          <a href="">Store</a>
+          <a href="">Cloud</a>
+        </div>
+        <div class="terms-privacy">
+          <a href="">Terms & Conditions</a>
+          <a href="">Privacy Policy</a>
+          <a href="">Copyright / DMCA</a>
+        </div>
+        <div class="copyright">
+          <p>Copyright &copy; 2023 Rumble. All Rights Reserved.</p>
+        </div>
+      </section>
     </main>
   </body>
 </html>

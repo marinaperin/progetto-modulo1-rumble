@@ -7,6 +7,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    --color-lightgray: hsl(214, 31%, 85%)
 }
 
 img {
@@ -40,12 +41,15 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem;
+    border-bottom: 1px solid var(--color-lightgray);
 }
 
 aside {
     grid-area: aside;
-    background-color: yellow;
     overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .categories {
@@ -60,6 +64,8 @@ main {
     overflow: auto;
 }
 
+/*_____________________________________________________________*/
+
 /* NAV */
 
 .left-nav {
@@ -71,7 +77,7 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid hsl(214, 31%, 85%);
+    border: 1px solid var(--color-lightgray);
     border-radius: 10px;
     width: 35%;
     height: 35px;
@@ -106,10 +112,91 @@ main {
     padding: .7rem 1rem;
     border-radius: 30px;
 }
+/*_____________________________________________________________*/
 
 /* ASIDE */
 
+/* Menu */
 
+.menu {
+    margin-top: 1rem;
+    border-bottom: 1px solid var(--color-lightgray);
+    width: 80%;
+    font-size: .6rem;
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .5rem;
+    text-align: center;
+}
+
+.menu-items:last-child {
+    margin-bottom: 1rem;
+}
+
+/* Featured */
+
+.featured {
+    font-size: .6rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid var(--color-lightgray);
+    width: 80%;
+}
+
+.featured-container {
+    margin-block: 1rem;
+}
+
+.profile-featured-container {
+    margin: .5rem;
+}
+
+.profile-featured-container>img {
+    border-radius: 50%;
+}
+
+.profile-featured-container>img.live {
+    border: 2px solid red;
+}
+
+/* Theme */
+
+.theme {
+    width: 80%;
+    font-size: .6rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    margin-bottom: 4rem;
+}
+
+.theme-items>p {
+    margin-top: .5rem;
+}
+
+/*_____________________________________________________________*/
+
+/* NAV CATEGORIES*/
+
+
+
+/*_____________________________________________________________*/
+
+
+
+/* MAIN */
+
+
+
+/*_____________________________________________________________*/
 
 /* MEDIA QUERIES */
 
