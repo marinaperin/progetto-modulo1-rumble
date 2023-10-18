@@ -431,7 +431,15 @@ header>figure {
     border-bottom: 1px solid var(--color-lightgray-border);
 }
 
+.cat-titles>strong>span {
+    color: hsl(344, 85%, 50%);
+}
+
 .streaming-live {
+    position: relative;
+}
+
+.timing-container {
     position: relative;
 }
 
@@ -442,10 +450,39 @@ header>figure {
 .label-live {
     font-size: .6rem;
     font-weight: 600;
-    display: inline;
     padding: .3rem .7rem;
     color: white;
     background-color: rgba(236, 19, 77, 80%);
+    border-radius: 8px;
+    position: absolute;
+    right: 8px;
+    bottom: 12px;
+}
+
+.viewers {
+    font-size: .6rem;
+    font-weight: 600;
+    display: flex;
+    gap: .3rem;
+    padding: .3rem .4rem;
+    color: white;
+    background-color: rgba(75, 88, 104, 80%);
+    border-radius: 8px;
+    position: absolute;
+    left: 8px;
+    bottom: 12px;
+}
+
+.viewers>img {
+    width: 14px;
+}
+
+.timing {
+    font-size: .6rem;
+    font-weight: 600;
+    padding: .3rem .4rem;
+    color: white;
+    background-color: rgba(58, 68, 81, 0.9);
     border-radius: 8px;
     position: absolute;
     right: 8px;
