@@ -10,3 +10,48 @@
 img {
     max-width: 100%;
 }
+
+/* LAYOUT DI BASE */
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "nav nav"
+    "aside cat"
+    "aside main";
+    grid-template-columns: 80px 1fr;
+    grid-template-rows: 69px 60px 1fr;
+}
+
+.nav {
+    grid-area: nav;
+    background-color: green;
+}
+
+aside {
+    grid-area: aside;
+    background-color: yellow;
+}
+
+.categories {
+    grid-area: cat;
+    background-color: blue;
+}
+
+main {
+    grid-area: main;
+    background-color: red;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 960px) {
+    body {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "nav nav"
+        "cat cat"
+        "main main";
+    }
+}
