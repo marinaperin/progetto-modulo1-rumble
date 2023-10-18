@@ -66,6 +66,26 @@ input, button {
     overflow: hidden;
 }
 
+.thumbnail:hover {
+    cursor: pointer;
+}
+
+.thumbnail-title:hover {
+    cursor: pointer;
+}
+
+.author:hover {
+    cursor: pointer;
+}
+
+.video-title:hover {
+    cursor: pointer;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
 /* LAYOUT DI BASE */
 
 body {
@@ -100,11 +120,17 @@ aside {
 .categories {
     grid-area: cat;
     overflow: auto;
+    font-size: .8rem;
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+    margin-left: 1.6rem;
 }
 
 main {
     grid-area: main;
     overflow: auto;
+    background-color: var(--bg-gray);
 }
 
 /*_____________________________________________________________*/
@@ -156,6 +182,14 @@ main {
     border-radius: 30px;
 }
 
+.left-nav>img:hover {
+    cursor: pointer;
+}
+
+.search-icon:hover {
+    cursor: pointer;
+}
+
 .sign-in:hover, .sign-up:hover {
     background-color: var(--bg-lightgray);
     border-radius: 30px;
@@ -167,6 +201,10 @@ main {
 /* ASIDE */
 
 /* Menu */
+
+aside:hover::-webkit-scrollbar {
+    display: none;
+}
 
 .menu {
     margin-top: 1rem;
@@ -187,6 +225,7 @@ main {
 .menu-items:hover {
     background-color: var(--bg-lightgray);
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .menu-items:last-child {
@@ -221,6 +260,10 @@ main {
     border: 2px solid red;
 }
 
+.profile-featured-container>img:hover {
+    cursor: pointer;
+}
+
 /* Theme */
 
 .theme>strong {
@@ -244,6 +287,7 @@ main {
 .theme-items:hover {
     background-color: var(--bg-lightgray);
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .theme-items>p {
@@ -254,12 +298,8 @@ main {
 
 /* NAV CATEGORIES*/
 
-.categories {
-    font-size: .8rem;
-    display: flex;
-    align-items: center;
-    gap: .3rem;
-    margin-left: 1.6rem;
+.categories:hover::-webkit-scrollbar {
+    display: none;
 }
 
 .categories>div {
@@ -278,13 +318,22 @@ main {
     background-color: hsl(240, 100%, 50%);
 }
 
+.categories .blue-cat>svg {
+    filter: invert();
+}
+
 .categories .red-cat {
     background-color: hsl(356, 100%, 39%);
+}
+
+.categories .red-cat>svg {
+    filter: invert();
 }
 
 .categories>div:hover {
     background-color: var(--color-darkgray);
     color: white;
+    cursor: pointer;
 }
 
 /*_____________________________________________________________*/
@@ -292,10 +341,6 @@ main {
 /* MAIN */
 
 /* Header */
-
-main {
-    background-color: var(--bg-gray);
-}
 
 header>figure {
     display: flex;
@@ -347,6 +392,10 @@ header>figure {
 .vertical-text :nth-child(2){
     color: var(--color-darkgray);
     padding-block: .5rem;
+}
+
+.cat-titles>*:hover {
+    cursor: pointer;
 }
 
 /* Video Rows */
