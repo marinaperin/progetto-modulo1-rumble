@@ -165,6 +165,7 @@ main {
 .search-icon>img {
     height: 20px;
     padding-right: 1rem;
+    flex-shrink: 0;
 }
 
 .sign-in {
@@ -384,6 +385,13 @@ header>figure {
     border-bottom: 1px solid var(--color-lightgray-border);
 }
 
+.vertical-video>figure {
+    max-width: 135px;
+    min-width: 85px;
+    overflow: hidden;
+    width: 100%;
+}
+
 .vertical-text {
     font-weight: 600;
     font-size: .8rem;
@@ -396,6 +404,14 @@ header>figure {
 
 .cat-titles>*:hover {
     cursor: pointer;
+}
+
+.vertical-video .thumbnail {
+    transition: .5s;
+}
+
+.vertical-video .thumbnail:hover {
+    filter: saturate(180%);
 }
 
 /* Video Rows */
@@ -413,6 +429,27 @@ header>figure {
 
 #main-page {
     border-bottom: 1px solid var(--color-lightgray-border);
+}
+
+.streaming-live {
+    position: relative;
+}
+
+.streaming-live>img {
+    border: 2px solid hsl(344, 85%, 50%);
+}
+
+.label-live {
+    font-size: .6rem;
+    font-weight: 600;
+    display: inline;
+    padding: .3rem .7rem;
+    color: white;
+    background-color: rgba(236, 19, 77, 80%);
+    border-radius: 8px;
+    position: absolute;
+    right: 8px;
+    bottom: 12px;
 }
 
 /*_____________________________________________________________*/
@@ -485,6 +522,7 @@ section a {
     .video-row {
         grid-template-columns: repeat(3, 1fr);
     }
+
 }
 
 @media (max-width: 640px) {
@@ -493,15 +531,21 @@ section a {
     }
     .search {
         border: none;
+        justify-content: flex-end;
     }
     .search>input {
-        visibility: hidden;
+        display: none;
     }
-    .search-icon>img {
-        padding-right: 0;
+    .right-nav {
+        display: flex;
     }
     .sign-in {
         padding: .5rem;
+        text-wrap: nowrap;
+    }
+    .sign-up{
+        padding: .5rem;
+        text-wrap: nowrap;
     }
     header>figure {
         flex-direction: column;
@@ -509,6 +553,14 @@ section a {
     }
     .mobile-hide {
         display: none;
+    }
+    .vertical-video {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+    }
+    .vertical-video .thumbnail {
+        height: 100%;
+
     }
     .video-row {
         grid-template-columns: repeat(2, 1fr);
