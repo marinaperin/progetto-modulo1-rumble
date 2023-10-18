@@ -9,6 +9,8 @@
     box-sizing: border-box;
     --color-lightgray-border: hsl(214, 31%, 85%);
     --bg-lightgray: hsl(220, 25%, 95%);
+    --bg-gray: hsl(220, 12%, 91%);
+    --color-green: hsl(92, 57%, 48%);
 }
 
 img {
@@ -41,6 +43,13 @@ input, button {
     font-weight: 600;
 }
 
+.view-all {
+    outline: none;
+    border: 1px solid var(--color-green);
+    padding: .5rem 1rem;
+    border-radius: 30px;
+    color: rgb(95 107 122);
+}
 
 /* LAYOUT DI BASE */
 
@@ -127,7 +136,7 @@ main {
 .sign-up {
     background-color: transparent;
     outline: none;
-    border: 2px solid hsl(92, 57%, 48%);
+    border: 2px solid var(--color-green);
     padding: .6rem 1rem;
     border-radius: 30px;
 }
@@ -237,6 +246,12 @@ main {
 
 /* MAIN */
 
+/* Header */
+
+main {
+    background-color: var(--bg-gray);
+}
+
 header>figure {
     display: flex;
     align-items: center;
@@ -257,8 +272,50 @@ header>figure {
 }
 
 .title-header>strong {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 }
+
+/* Vertical Videos */
+
+.cat-titles {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.6rem 1.6rem .6rem;
+}
+
+.cat-titles>strong {
+    font-size: 1.2rem;
+}
+
+.vertical-video {
+    display: flex;
+    gap: 1rem;
+    padding: 0 1.6rem 1.6rem;
+    border-bottom: 1px solid var(--color-lightgray-border);
+}
+
+.vertical-thumbnail {
+    border-radius: 10px;
+}
+
+.vertical-text {
+    margin-top: .6rem;
+    font-weight: 600;
+}
+
+.vertical-text :nth-child(2){
+    color: hsl(213, 21%, 28%);
+    padding-block: .5rem;
+}
+
+/* Video Rows */
+
+
+
+
+
+
+
 
 
 
