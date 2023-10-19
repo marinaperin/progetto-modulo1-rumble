@@ -493,8 +493,8 @@ header > figure {
   position: relative;
 }
 
-.upcoming-container>img {
-    border: 2px solid rgb(233, 196, 8);
+.upcoming-container > img {
+  border: 2px solid rgb(233, 196, 8);
 }
 
 .upcoming {
